@@ -37,6 +37,8 @@ function destructivelyAddElementToEndOfArray (array, element) {
 
 function accessElementInArray (array, index) {
 
+array[1]
+
 return array[1]
 }
 
