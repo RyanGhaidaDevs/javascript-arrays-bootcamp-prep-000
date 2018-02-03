@@ -37,10 +37,9 @@ function destructivelyAddElementToEndOfArray (array, element) {
 
 function accessElementInArray (array, index) {
 
-var index = array[1]
-
-return index
+return array[1]
 }
+
 
 
 //this function should be destructiive
