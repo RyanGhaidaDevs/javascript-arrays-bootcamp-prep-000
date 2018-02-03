@@ -30,12 +30,12 @@ function destructivelyAddElementToEndOfArray (array, element) {
 
     array.push(element)
 
-  return array 
+  return array
 
 }
 
 
-function accessElementInArray (array) {
+function accessElementInArray (array, index) {
 
 var index = array[1]
 
