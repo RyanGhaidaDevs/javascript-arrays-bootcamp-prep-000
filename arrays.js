@@ -57,7 +57,7 @@ return newarray
 //this function should not mutate original array
 function removeElementFromBeginningOfArray (array) {
 
-  array = array.slice(1)
+ array.slice(1)
 
   return array
 }
