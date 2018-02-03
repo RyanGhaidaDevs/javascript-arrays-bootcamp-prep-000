@@ -57,17 +57,17 @@ return newarray
 //this function should not mutate original array
 function removeElementFromBeginningOfArray (array) {
 
-  var x = array.slice(1)
+  array = array.slice(1)
 
-  return x
+  return array
 }
 
 //should mutate original
 function destructivelyRemoveElementFromEndOfArray(array) {
 
-  var newarray = array.pop()
+  array.pop()
 
-  return newarray
+  return array
 }
 
 //should not mutate original array
