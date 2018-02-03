@@ -50,14 +50,14 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
 
 var newarray = array.shift()
 
-return newarray
+return array
 
 }
 
 //this function should not mutate original array
 function removeElementFromBeginningOfArray (array) {
 
- array.slice(1)
+ array = array.slice(1)
 
   return array
 }
