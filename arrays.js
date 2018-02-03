@@ -28,9 +28,9 @@ function addElementToEndOfArray (array,element) {
 //should alter original array
 function destructivelyAddElementToEndOfArray (array, element) {
 
-  var newarray = array.push(element)
+    array.push(element)
 
-  return newarray
+  return array 
 
 }
 
@@ -45,7 +45,6 @@ return index
 
 //this function should be destructiive
 function destructivelyRemoveElementFromBeginningOfArray(array) {
-
 
 
 var newarray = array.shift()
