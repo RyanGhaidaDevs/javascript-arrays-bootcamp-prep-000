@@ -11,87 +11,68 @@ function addElementToBeginningOfArray (array, element ) {
 function destructivelyAddElementToBeginningOfArray (array,element) {
  // var array = array
  // var element = element
- //
-  array.upshift(element);
-  
-  return array //[4,1,2,3]
-
+  var array2 = array.unshift(element)
+  return array 
 }
 
-destructivelyAddElementToBeginningOfArray()
 
 
 //should not alter original array
-function addElementToEndOfArray (array,elelement) {
-
- var array = [1,2,3]
- var newarray = [...array, 4] //[1,2,3,4]
-  return array
+function addElementToEndOfArray (array,element) {
+ //var array = array
+  var newarray = [...array, element] 
+  return newarray 
 }
 
-addElementToEndOfArray() //[1,2,3]
 
 //should alter original array
 function destructivelyAddElementToEndOfArray (array, element) {
-var array = [1,2,3]
- var element = 4
 
-  array.push(element)
+  var newarray = array.push(element)
 
-  return array
+  return newarray
 
 }
 
-destructivelyAddElementToEndOfArray()
-
-
 
 function accessElementInArray (array) {
-var array = [1,2,3]
+
 var index = array[1]
 
 return index
 }
 
-accessElementInArray()
 
-
-//this function should eb destructiive
+//this function should be destructiive
 function destructivelyRemoveElementFromBeginningOfArray(array) {
 
-var array = [1,2,3]
 
-array.shift()
 
-return array
+var newarray = array.shift()
+
+return newarray
 
 }
-
-destructivelyRemoveElementFromBeginningOfArray()
-
 
 //this function should not mutate original array
 function removeElementFromBeginningOfArray (array) {
-  var array = [1,2,3]
-
+  
   var newarray = array.slice(1)
 
-  return array
+  return newarray
 }
-
-removeElementFromBeginningOfArray()
 
 //should mutate original
 function destructivelyRemoveElementFromEndOfArray(array) {
-  var array = [1,2,3]
-  array.pop()
 
-  return array
+  var newarray = array.pop()
+
+  return newarray
 }
 
 //should not mutate original array
 function removeElementFromEndOfArray(array) {
-  var array = [1,2,3]
+
   var newarray = array.slice(0, array.length-1)
 
   return array
